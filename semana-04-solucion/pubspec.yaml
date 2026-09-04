@@ -1,0 +1,16 @@
+name: importaciones_week
+description: Solución semanal — empresa de importación
+publish_to: none
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5+1
+  go_router: ^16.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
