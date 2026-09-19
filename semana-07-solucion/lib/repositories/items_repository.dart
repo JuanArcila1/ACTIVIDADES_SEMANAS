@@ -1,0 +1,2 @@
+import 'package:dio/dio.dart';
+class ItemsRepository { final Dio dio; ItemsRepository(this.dio); Future<Map<String,dynamic>> createItem({required String name,required String supplier,required String category}) async { try { final r=await dio.post('https://jsonplaceholder.typicode.com/posts',data:{'title':name,'body':'$supplier — $category','userId':1}); return Map<String,dynamic>.from(r.data); } on DioException catch(e){ throw Exception('Error de red: ${e.message}'); } } }
